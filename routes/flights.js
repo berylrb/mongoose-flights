@@ -8,6 +8,7 @@ router.get('/new', flightsCtrl.new)
 router.post('/', flightsCtrl.create)
 router.get('/', flightsCtrl.index)
 router.delete('/:id', flightsCtrl.delete)
+router.get('/:id', flightsCtrl.show)
 
 
 export {

@@ -22,7 +22,9 @@
           </form></td>
           <td><%= flight.airline %></td>
           <td><%= flight.airport %></td>
-          <td><a href="/flights/<%= flight._id %>"><%= flight.flightNo %></a></td>
+          <td><a 
+            href="/flights/<%= flight._id %>" <%- title === 'Show Flight' ? 'class="active"' : '' %>
+          ><%= flight.flightNo %></a></td>
           <td><%= flight.departs %></td>
         </tr>
       <% }) %>
