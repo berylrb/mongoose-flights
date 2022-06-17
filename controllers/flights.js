@@ -13,7 +13,6 @@ function create(req, res) {
     console.log(flight)
     // SEND A GET REQUEST TO THIS URL!
     res.redirect(`/flights`)
-    title: 'All Flights'
   })
   .catch(err => {
     console.log(err)
@@ -22,7 +21,7 @@ function create(req, res) {
 }
 
 function index(req, res) {
-  Flight.findOne({})
+  Flight.find({})
   .then(flights => {
     res.render('flights/index', {
       flights: flights,
@@ -35,9 +34,21 @@ function index(req, res) {
   })
 }
 
+function deleteFlight(req, res) {
+  Flight.findByIdAndDelete(req.params.id)
+  .then(flight => {
+    res.redirect('/flights')
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect('/flights')
+  })
+}
+
 
 export {
   newFlight as new,
   create,
-  index
+  index,
+  deleteFlight as delete
 }
