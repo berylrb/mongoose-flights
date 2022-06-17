@@ -4,10 +4,10 @@ import * as flightsCtrl from '../controllers/flights.js'
 const router = Router()
 
 /* GET users listing. */
-router.get('/', flightsCtrl.new)
-
-
+router.get('/new', flightsCtrl.new)
 router.post('/', flightsCtrl.create)
+router.get('/', flightsCtrl.index)
+
 
 export {
   router
