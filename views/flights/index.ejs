@@ -1,15 +1,16 @@
 <%- include('../partials/html-head') %>
 <link rel="stylesheet" href="/stylesheets/flights/index.css" />
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 <%- include('../partials/nav') %>
 
 <main>
   <h1><%= title %></h1>
-  <table>
+  <table class="sortable">
     <thead>
       <tr>
         <th>Delete Flight</th>
-        <th>Airline</th>
-        <th>Airport</th>
+        <th onclick="sortTable(0)">Airline</th>
+        <th onclick="sortTable(1)">Airport</th>
         <th>Flight Number</th>
         <th>Departs</th>
       </tr>
