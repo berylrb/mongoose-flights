@@ -35,3 +35,8 @@ table td {
 #list a:hover {
   background-color: white;
 }
+
+button {
+  color: rgb(143, 12, 12);
+  font-weight: 800;
+}

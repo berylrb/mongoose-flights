@@ -13,7 +13,14 @@ form * {
 
 form > button {
   grid-column: span 2;
-  width: 160px;
+  width: 352px;
   margin-left: auto;
   font-size: 22px;
+  background-color: #add8e6;
 }
+
+form > button:hover {
+  background-color: #88b0bd;
+  color: white;
+}
+

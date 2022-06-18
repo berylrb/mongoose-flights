@@ -8,9 +8,13 @@ function newFlight(req, res) {
 }
 
 function create(req, res) {
+  console.log(req.body, "REQ.BODY")
+  for (let key in req.body) {
+    if (req.body[key] === '') delete req.body[key]
+  }
   Flight.create(req.body)
   .then(flight => {
-    console.log(flight)
+    console.log(flight, "created flight")
     // SEND A GET REQUEST TO THIS URL!
     res.redirect(`/flights`)
   })
