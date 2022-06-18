@@ -6,14 +6,14 @@ const flightSchema = new Schema({
   airline: {
     type: String,
     default: 'Delta',
-    enum: ['American', 'Southwest', 'United', 'Delta'],
+    enum: ['American Airlines', 'British Airways', 'Delta', 'Southwest', 'United', 'Virgin America'],
   },
   airport: {
     type: String,
     default: 'RDU',
-    enum: ['DFW', 'DEN', 'AUS', 'LAX', 'SAN', 'RDU', 'SFO'],
+    enum: ['ATL', 'AUS', 'CLT', 'DEN', 'DFW', 'LAX', 'LHR', 'RDU', 'SAN', 'SFO'],
   },
-  flightNo: {type: Number, min: 10, max: 9999},
+  flightNo: {type: Number, required: true, min: 10, max: 9999},
   departs: {type: Date,
   default: function() {
     return new Date().getFullYear()
