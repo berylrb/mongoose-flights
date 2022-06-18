@@ -5,19 +5,22 @@ body {
 
 table {
   font-size: 15px;
+  border-collapse: collapse;
+  border: 2px solid #424748;
+  background-color: rgb(248, 247, 247);
 }
 
 table thead th {
   background-color: cornflowerblue;
   color: white;
-  padding: 5px;
+  padding: 10px;
   border: 2px solid #424748;
 }
 
 table td {
   padding: 10px;
   text-align: center;
-  width: 15vw;
+  width: 13vw;
   border: 2px solid #424748;
 }
 

@@ -1,8 +1,19 @@
+
+
 table {
   font-size: 15px;
   border-collapse: collapse;
   border: 2px solid #424748;
   background-color: rgb(248, 247, 247);
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+table td #past {
+  color: red;
 }
 
 p {
@@ -13,14 +24,16 @@ table thead th {
   padding: 10px;
   border: 2px solid #424748;
   background-color: rgb(241, 237, 224);
-  
+  font-weight: 600;
 }
 
 
 table td {
-  padding: 15px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1em;
   text-align: center;
-  width: 15vw;
+  width: 13vw;
   border: 2px solid #424748;
   
 
