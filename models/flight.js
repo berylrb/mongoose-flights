@@ -15,12 +15,13 @@ const flightSchema = new Schema({
   },
   flightNo: {type: Number, required: true, min: 10, max: 9999},
   departs: {type: Date,
-  default: function() {
-    let newDate = new Date()
-    newDate.setMinutes(newDate.getMinutes() - newDate.getTimezoneOffset());
-    return newDate.toISOString().slice(0,16)
-  }
-}
+    default: function() {
+      let newDate = new Date()
+      newDate.setMinutes(newDate.getMinutes() - newDate.getTimezoneOffset());
+      return newDate.toISOString().slice(0,16)
+    }
+  },
+  // flightClass: 'none'
 })
 
 const Flight = mongoose.model("Flight", flightSchema)

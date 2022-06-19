@@ -12,7 +12,7 @@ h1 {
   font-weight: 500;
 }
 
-table td #past {
+.red {
   color: red;
 }
 
@@ -33,7 +33,7 @@ table td {
   font-weight: 500;
   font-size: 1em;
   text-align: center;
-  width: 13vw;
+  width: 14vw;
   border: 2px solid #424748;
   
 
