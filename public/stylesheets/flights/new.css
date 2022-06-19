@@ -1,14 +1,23 @@
 .wrapper {
   display: flex;
   position: relative;
-  right: 3vw;
+  background-color: rgb(248, 248, 248);
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-top: 4vh;
+  padding-bottom: 6vh;
+  max-width: 60vw;
+  top: -1.5vh;
 }
 
 form {
-  display: grid;
-  right: -8vw;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, minmax(auto, 352px));
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  width: 50vw;
+  /* grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 352px)); */
   font-size: 20px;
   font-weight: 500;
 }
@@ -22,7 +31,8 @@ form * {
 
 form > button {
   grid-column: span 2;
-  width: 352px;
+  width: 100%;
+  margin-top: 2vh;
   margin-left: auto;
   font-size: .8em;
   font-weight: 600;
@@ -41,8 +51,12 @@ h1 {
 
 
 label {
-  display: flex;
-  position: relative;
-  right: -12vw;
-  font-weight: 500;
+  display: inline;
+  margin-top: .4vh;
+  margin-bottom: -1.6vh;
 }
+
+input { 
+  display: inline;
+  width: 100%;
+} 
