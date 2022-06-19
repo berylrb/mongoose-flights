@@ -1,10 +1,18 @@
+.wrapper {
+  display: flex;
+  position: relative;
+  right: 3vw;
+}
+
 form {
   display: grid;
+  right: -8vw;
   grid-gap: 10px;
   grid-template-columns: repeat(2, minmax(auto, 352px));
   font-size: 20px;
   font-weight: 500;
 }
+
 
 form * {
   padding: 5px;
@@ -16,7 +24,8 @@ form > button {
   grid-column: span 2;
   width: 352px;
   margin-left: auto;
-  font-size: 22px;
+  font-size: .8em;
+  font-weight: 600;
   background-color: #add8e6;
 }
 
@@ -27,5 +36,13 @@ form > button:hover {
 
 h1 {
   font-size: 1.5em;
+  font-weight: 500;
+}
+
+
+label {
+  display: flex;
+  position: relative;
+  right: -12vw;
   font-weight: 500;
 }

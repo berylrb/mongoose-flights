@@ -61,11 +61,7 @@ body > nav {
   border-bottom: 2px #424748 solid;
 }
 
-nav > i {
-  width: 34px;
-  object-fit: contain;
-  margin-right: auto;
-}
+
 
 nav > a {
   margin: 20px;
@@ -88,6 +84,14 @@ nav > a.active {
   color: white;
 }
 
-.fas::before {
-  font-family: "Font Awesome 5 Free";
+
+.material-symbols-outlined {
+  font-size: 20em;
+  object-fit: contain;
+  margin-right: auto;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }

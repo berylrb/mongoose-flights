@@ -4,38 +4,40 @@
 
 <main>
   <h1><%= title %></h1>
-  <form id="new-form" action="/flights" method="POST">
-    <label for="airline-input">Airline</label>
-      <select name="airline" id="airline-dropdown">
-        <option value="" disabled selected hidden>Select Airline</option>
-        <option value="American Airlines">American Airlines</option>
-        <option value="British Airways">British Airways/option>
-        <option value="Delta">Delta</option>
-        <option value="Southwest">Southwest</option>
-        <option value="United">United</option>
-        <option value="Virgin America">Virgin America</option>
-      </select>
-    <form action="#">
-      <label for="airport-input">Airport</label>
-      <select name="airport" id="airport-dropdown">
-        <option value="" disabled selected hidden>Select Airport</option>
-        <option value="ATL">ATL</option>
-        <option value="AUS">AUS</option>
-        <option value="CLT">CLT</option>
-        <option value="DEN">DEN</option>
-        <option value="DFW">DFW</option>
-        <option value="LAX">LAX</option>
-        <option value="LAX">LHR</option>
-        <option value="RDU">RDU</option>
-        <option value="SAN">SAN</option>
-        <option value="SFO">SFO</option>
-      </select>
-    <label for="flight-number-input">Flight Number</label>
-    <input type="number" name="flightNo" id="flight-number-input" required min="10" max="9999">
-    <label for="departure">Departs</label>
-    <input type="datetime-local" name="departs" id="departs-input" >
-    <button type="submit">Add Flight</button>
-  </form>
+  <div class="wrapper">
+    <form id="new-form" action="/flights" method="POST">
+      <label for="airline-input">Airline</label>
+        <select name="airline" id="airline-dropdown">
+          <option value="" disabled selected hidden>Select Airline</option>
+          <option value="American Airlines">American Airlines</option>
+          <option value="British Airways">British Airways/option>
+          <option value="Delta">Delta</option>
+          <option value="Southwest">Southwest</option>
+          <option value="United">United</option>
+          <option value="Virgin America">Virgin America</option>
+        </select>
+      <form action="#">
+        <label for="airport-input">Airport</label>
+        <select name="airport" id="airport-dropdown">
+          <option value="" disabled selected hidden>Select Airport</option>
+          <option value="ATL">ATL</option>
+          <option value="AUS">AUS</option>
+          <option value="CLT">CLT</option>
+          <option value="DEN">DEN</option>
+          <option value="DFW">DFW</option>
+          <option value="LAX">LAX</option>
+          <option value="LAX">LHR</option>
+          <option value="RDU">RDU</option>
+          <option value="SAN">SAN</option>
+          <option value="SFO">SFO</option>
+        </select>
+      <label for="flight-number-input">Flight Number</label>
+      <input type="number" name="flightNo" id="flight-number-input" required min="10" max="9999" placeholder="Enter Flight Number">
+      <label for="departure">Departs</label>
+      <input type="datetime-local" name="departs" id="departs-input">
+      <button type="submit">Add Flight</button>
+    </form>
+  </div>
 </main>
 
 <%- include("../partials/footer") %>  
