@@ -25,7 +25,7 @@
           </form></td>
           <td><%= flight.airline %></td>
           <td><%= flight.airport %></td>
-          <td><a href="/flights/<%= flight._id %>" <%- title === 'Flight Details' ? 'class="active"' : '' %>><%= flight.flightNo %></a></td>
+          <td class="flight-no-class"><a href="/flights/<%= flight._id %>" <%- title === 'Flight Details' ? 'class="active"' : '' %>><%= flight.flightNo %></a></td>
           <td class=<%= flight.departs < Date.now()?"passed":"upcoming"%>><%= flight.departs.toLocaleDateString() + " -- " + flight.departs.toLocaleTimeString([], {timeStyle: 'short'}) %></td>
         </tr>
       <% }) %>

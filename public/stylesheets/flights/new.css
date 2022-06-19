@@ -41,7 +41,7 @@ form > button {
 }
 
 form > button:hover {
-  background-color: rgb(105, 150, 255);
+  background-color: rgb(97, 140, 240);
   color: white;
 }
 
@@ -68,7 +68,7 @@ input {
 } 
 
 input:hover {
-  background-color: rgb(187, 208, 254);
+  background-color: rgba(206, 220, 249, 0.818);
 }
 
 select {
@@ -77,5 +77,5 @@ select {
 }
 
 select:hover {
-  background-color: rgb(187, 208, 254);
+  background-color: rgba(206, 220, 249, 0.818);
 }
