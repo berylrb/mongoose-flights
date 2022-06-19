@@ -25,7 +25,7 @@
           <td><%= flight.airline %></td>
           <td><%= flight.airport %></td>
           <td><a href="/flights/<%= flight._id %>" <%- title === 'Flight Details' ? 'class="active"' : '' %>><%= flight.flightNo %></a></td>
-            <td class="<%= flight.colorClass %>"><%= flight.departs.toLocaleDateString() + " -- " + flight.departs.toLocaleTimeString('en-US') %></td>
+          <td class=<%= flight.departs < Date.now()?"passed":"upcoming"%>><%= flight.departs.toLocaleDateString() + " -- " + flight.departs.toLocaleTimeString('en-US') %></td>
         </tr>
       <% }) %>
     </tbody>

@@ -25,15 +25,6 @@ function create(req, res) {
 }
 
 function index(req, res) {
-  for (let key in req.body) {
-    if (key === departs) {
-      if (new Date(req.body[key]) < new Date()) {
-        req.body[colorClass] = 'red'
-      } else {
-        req.body[colorClass] = 'none'
-      }
-    }
-  }
   Flight.find({})
   .then(flights => {
     res.render('flights/index', {
