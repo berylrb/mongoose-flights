@@ -1,13 +1,14 @@
 .wrapper {
   display: flex;
   position: relative;
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(248, 250, 255);
   padding-left: 8vw;
   padding-right: 8vw;
-  padding-top: 9vh;
+  padding-top: 4vh;
   padding-bottom: 6vh;
   max-width: 60vw;
   top: -1.5vh;
+  border: 2px solid #424748;
 }
 
 form {
@@ -36,18 +37,19 @@ form > button {
   margin-left: auto;
   font-size: .8em;
   font-weight: 600;
-  background-color: #add8e6;
+  background-color: rgb(176, 198, 249);
 }
 
 form > button:hover {
-  background-color: #88b0bd;
+  background-color: rgb(105, 150, 255);
   color: white;
 }
 
 h1 {
+  margin-top: 5vh;
   display: flex;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 500;
 }
 
@@ -61,4 +63,19 @@ label {
 input { 
   display: inline;
   width: 100%;
+  border: 2px solid #424748;
+  font-size: .8em;
 } 
+
+input:hover {
+  background-color: rgb(187, 208, 254);
+}
+
+select {
+  border: 2px solid #424748;
+  font-size: .8em;
+}
+
+select:hover {
+  background-color: rgb(187, 208, 254);
+}

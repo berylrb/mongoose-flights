@@ -5,15 +5,16 @@
 
 <main>
   <h1><%= title %></h1>
+  <div class="wrapper">
   <table class="sortable">
     <p>Click on Category Names to Sort</p>
     <thead>
       <tr>
-        <th>Delete Flight</th>
-        <th onclick="sortTable(0)">Airline</th>
-        <th onclick="sortTable(1)">Airport</th>
-        <th>Flight Number</th>
-        <th>Departs</th>
+        <th>DELETE FLIGHT</th>
+        <th onclick="sortTable(0)">AIRLINE</th>
+        <th onclick="sortTable(1)">AIRPORT</th>
+        <th>FLIGHT NUMBER</th>
+        <th>DEPARTS</th>
       </tr>
     </thead>
     <tbody>
@@ -30,6 +31,7 @@
       <% }) %>
     </tbody>
   </table>
+</div>
 </main>
 
 <%- include('../partials/footer') %>
