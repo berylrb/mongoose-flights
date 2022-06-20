@@ -6,7 +6,7 @@
   padding-right: 8vw;
   padding-top: 4vh;
   padding-bottom: 6vh;
-  max-width: 60vw;
+  max-width: 55vw;
   top: -1.5vh;
   border: 2px solid #424748;
 }
@@ -16,7 +16,7 @@ form {
   flex-direction: column;
   position: relative;
   justify-content: center;
-  width: 50vw;
+  width: 45vw;
   /* grid-gap: 10px;
   grid-template-columns: repeat(2, minmax(auto, 352px)); */
   font-size: 1em;
@@ -57,8 +57,8 @@ h1 {
   margin-top: 5vh;
   display: flex;
   position: relative;
-  font-size: 1.8em;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 

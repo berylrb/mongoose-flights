@@ -3,7 +3,7 @@ table {
   border-collapse: collapse;
   border: 2px solid #424748;
   background-color: rgb(250, 251, 255);
-  width: 75vw;
+  width: 70vw;
 }
 
 .detail-table {
@@ -67,7 +67,7 @@ h2 {
   padding-right: 8vw;
   padding-top: 4vh;
   padding-bottom: 6vh;
-  width: 75vw;
+  width: 70vw;
   top: 4.5vh;
   border: 2px solid #424748;
   margin-bottom: 6vh;
@@ -125,8 +125,8 @@ h1 {
   margin-top: 5vh;
   display: flex;
   position: relative;
-  font-size: 1.8em;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 
@@ -186,7 +186,7 @@ select:hover {
   }
 
   #tickets-table {
-    width: 75vw;
+    width: 70vw;
   }
 
   #tickets-table thead th {
@@ -217,7 +217,7 @@ select:hover {
     padding-right: 8vw;
     padding-top: 4vh;
     padding-bottom: 6vh;
-    width: 75vw;
+    width: 70vw;
     top: 4.5vh;
     border: 2px solid #424748;
     margin-top: 3vh;
@@ -228,7 +228,7 @@ select:hover {
     display: flex;
     position: relative;
     border: 1px solid #424748;
-    width: 65vw;
+    width: 60vw;
     min-height: 25vh;
     bottom: -1vh;
     background-color: rgb(248, 250, 255);
@@ -252,7 +252,7 @@ select:hover {
     padding-right: 8vw;
     padding-top: 4vh;
     padding-bottom: 6vh;
-    width: 75vw;
+    width: 70vw;
     top: 4.5vh;
     border: 2px solid #424748;
     margin-bottom: 16vh;
