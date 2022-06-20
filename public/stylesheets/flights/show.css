@@ -169,7 +169,7 @@ select:hover {
   }
 
   #tickets-table {
-    width: 70vw;
+    width: 75vw;
   }
 
   #tickets-table thead th {
@@ -179,4 +179,22 @@ select:hover {
     color: #424748;
     font-size: 1.04em;
     font-weight: 500;
+  }
+
+  a:hover {
+    color: rgb(72, 127, 254);
+    font-weight: 600;
+  }
+
+  .inner-wrapper {
+    border: 2px solid #424748;
+    width: 65vw;
+    min-height: 20vh;
+  }
+
+
+  .flight-menu-h2 {
+    display: flex;
+    position: relative;
+    top: -2vh;
   }

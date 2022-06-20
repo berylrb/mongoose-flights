@@ -45,6 +45,8 @@
   <hr>
   <br>
   <br>
+  <h2>All Tickets</h2>
+  <br>
   <section>
     <% if (flight.tickets.length) { %> 
       <table id="tickets-table">
@@ -73,22 +75,24 @@
   </section>
 
 <section>
-  <div>
-    <h2><span class="material-symbols-outlined">
+  <div class="wrapper">
+    <h2 class="flight-menu-h2"><span class="material-symbols-outlined">
       restaurant
       </span>Flight Menu:</h2>
-  </div>
-  <ul>
-    <% flight.meals.forEach(meal => { %>
-      <li><%= meal.name %></li>
-    <% }) %>
-  </ul>
+  <div class="inner-wrapper">
+    <ul>
+      <% flight.meals.forEach(meal => { %>
+        <li><%= meal.name %></li>
+      <% }) %>
+    </ul>
+  </div>    
+</div>
 </section>
 <br>
 <br>
 <br>
 <br>
-
+<h2>Add to Meal</h2>
 <form id="add-meal-flight" action="/flights/<%= flight._id %>/meals" method="POST">
   <select name="mealId">
     <% meals.forEach(meal => { %>
