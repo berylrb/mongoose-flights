@@ -6,10 +6,6 @@ table {
   width: 75vw;
 }
 
-/* tr:hover{
-  background-color: rgba(206, 220, 249, 0.818);
-} */
-
 
 
 h1 {
@@ -51,3 +47,129 @@ table td {
   
 
 }
+
+.wrapper {
+  display: flex;
+  position: relative;
+  background-color: rgb(248, 250, 255);
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-top: 4vh;
+  padding-bottom: 6vh;
+  max-width: 60vw;
+  top: 4.5vh;
+  border: 2px solid #424748;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  width: 50vw;
+  /* grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 352px)); */
+  font-size: 1em;
+  font-weight: 500;
+}
+
+
+form * {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+form > button {
+  border: 1px solid #505c67;
+  padding: 7px 16px;
+  min-height: 36px;
+  min-width: 30px;
+  width: 100%;
+  margin-top: 2vh;
+  margin-left: auto;
+  font-size: .8em;
+  font-weight: 600;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+  background-color: rgb(176, 198, 249);
+}
+
+form > button:hover {
+  background-color: rgb(164, 184, 233);
+  /* color: rgb(235, 235, 235); */
+  outline: 1px solid transparent;
+}
+
+h1 {
+  margin-top: 5vh;
+  display: flex;
+  position: relative;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+
+label {
+  display: inline;
+  margin-top: .4vh;
+  margin-bottom: -1.6vh;
+}
+
+input { 
+  display: inline;
+  width: 100%;
+  border: 1px solid #424748;
+  font-size: .8em;
+} 
+
+input:hover {
+  background-color: rgba(241, 246, 255, 0.818);
+}
+
+select {
+  border: 1px solid #424748;
+  font-size: .8em;
+}
+
+select:hover {
+  background-color: rgba(241, 246, 255, 0.818);
+}
+
+#delete {
+  
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #babfc3;
+  padding: 7px 16px;
+  width: 4vw;
+  color: #202223;
+  background: #ffffff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+  
+  }
+  
+  #delete:hover {
+    background: #f6f6f7;
+    outline: 1px solid transparent;
+  }
+
+  #tickets-table {
+    width: 70vw;
+  }
+
+  #tickets-table thead th {
+    padding: 19px;
+    border: 2px solid #424748;
+    background-color: rgb(219, 230, 255);
+    color: #424748;
+    font-size: 1.04em;
+    font-weight: 500;
+  }
