@@ -1,48 +1,53 @@
-body {
-  background-color: cornflowerblue;
-}
-
-
 table {
   font-size: 15px;
   border-collapse: collapse;
   border: 2px solid #424748;
-  background-color: rgb(248, 247, 247);
+  background-color: rgb(250, 251, 255);
+  width: 75vw;
+}
+
+/* tr:hover{
+  background-color: rgba(206, 220, 249, 0.818);
+} */
+
+
+
+h1 {
+  margin-top: 5vh;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.passed {
+  color: rgb(186, 19, 19);
+}
+
+
+p {
+  margin-top: -1.5vh;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: .8em;
 }
 
 table thead th {
-  background-color: cornflowerblue;
-  color: white;
-  padding: 10px;
+  padding: 19px;
   border: 2px solid #424748;
+  background-color: rgb(219, 230, 255);
+  color: #424748;
+  font-size: 1.04em;
+  font-weight: 500;
 }
+
 
 table td {
   padding: 10px;
+  font-weight: 400;
+  font-size: 1em;
   text-align: center;
-  width: 13vw;
+  height: 10vh;
   border: 2px solid #424748;
-}
+  
 
-#list td:nth-child(2),
-#list td:nth-child(3) {
-  min-width: 26vw;
 }
-
-#list a {
-  border-radius: 4px;
-  background-color: #b8c0c2;
-  padding: 4px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #424748;
-}
-
-#list a:visited{
-  color: #424748;
-}
-
-#list a:hover {
-  background-color: white;
-}
-
