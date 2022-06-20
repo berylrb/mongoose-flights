@@ -68,6 +68,23 @@
       <h3>Hmm... Looks like this flight doesn't have tickets yet.</h3>  
     <% } %>
   </section>
+
+<section>
+  <div>Flight Menu:</div>
+  <ul>
+    <% flight.meals.forEach(meal => { %>
+      <li><%= meal.name %></li>
+    <% }) %>
+  </ul>
+</section>
+
+<form id="add-meal-flight" action="" method="">
+  <select name="mealId">
+    <% meals.forEach(meal => { %>
+      <option value="<%= meal._id %>"><%= meal.name %></option>
+    <% }) %>
+  </select>
+</form>
 </main>
 
 <%- include("../partials/footer") %>  

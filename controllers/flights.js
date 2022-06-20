@@ -59,7 +59,7 @@ function show(req, res) {
       res.render('flights/show', {
         title: 'Flight Details',
         flight: flight,
-        meals: meals
+        meals
       })
     })
   })
