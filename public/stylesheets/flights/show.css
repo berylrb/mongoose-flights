@@ -29,7 +29,7 @@ p {
 
 table thead th {
   padding: 19px;
-  border: 2px solid #424748;
+  border: 1px solid #424748;
   background-color: rgb(219, 230, 255);
   color: #424748;
   font-size: 1.04em;
@@ -43,9 +43,14 @@ table td {
   font-size: 1em;
   text-align: center;
   height: 10vh;
-  border: 2px solid #424748;
-  
+  border: 1px solid #7c7c7c;
+}
 
+h2 {
+  display: flex;
+  position: relative;
+  bottom: -3vh;
+  font-size: 1.2em;
 }
 
 .wrapper {
@@ -169,7 +174,7 @@ select:hover {
 
   #tickets-table thead th {
     padding: 19px;
-    border: 2px solid #424748;
+    border: 1px solid #424748;
     background-color: rgb(219, 230, 255);
     color: #424748;
     font-size: 1.04em;
