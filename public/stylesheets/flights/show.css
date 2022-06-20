@@ -6,12 +6,15 @@ table {
   width: 75vw;
 }
 
+.detail-table {
+  margin-bottom: 8vh;
+}
 
 
 h1 {
   margin-top: 5vh;
   font-size: 1.8em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .passed {
@@ -53,7 +56,8 @@ h2 {
   font-size: 1.2em;
 }
 
-.wrapper {
+
+.add-ticket-wrapper {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -66,6 +70,7 @@ h2 {
   width: 75vw;
   top: 4.5vh;
   border: 2px solid #424748;
+  margin-bottom: 6vh;
 }
 
 #add-ticket-form {
@@ -78,6 +83,11 @@ h2 {
   grid-template-columns: repeat(2, minmax(auto, 352px)); */
   font-size: 1em;
   font-weight: 500;
+}
+
+
+.all-tickets-wrapper {
+margin-bottom: 8vh;
 }
 
 
@@ -101,12 +111,12 @@ form > button {
   font-weight: 500;
   font-size: 14px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
-  background-color: rgb(176, 198, 249);
+  background-color: rgb(219, 230, 255);
   cursor: pointer;
 }
 
 form > button:hover {
-  background-color: rgb(164, 184, 233);
+  background-color: rgb(178, 193, 231);
   /* color: rgb(235, 235, 235); */
   outline: 1px solid transparent;
 }
@@ -153,14 +163,21 @@ select:hover {
   cursor: pointer;
   border: 1px solid #babfc3;
   padding: 7px 16px;
-  width: 6vw;
+  max-width: 5vw;
   color: #202223;
   background: #ffffff;
   border-radius: 4px;
   font-weight: 500;
   font-size: 14px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
-  
+  }
+
+  .bi-trash {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
   }
   
   #delete:hover {
@@ -181,15 +198,40 @@ select:hover {
     font-weight: 500;
   }
 
+  #tickets-table td {
+    padding: 2vw;
+  }
+
   a:hover {
     color: rgb(72, 127, 254);
     font-weight: 600;
   }
 
-  .inner-wrapper {
+  .menu-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(219, 230, 255);
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 4vh;
+    padding-bottom: 6vh;
+    width: 75vw;
+    top: 4.5vh;
     border: 2px solid #424748;
+    margin-top: 3vh;
+    margin-bottom: 7vh;
+  }
+
+  .inner-wrapper {
+    display: flex;
+    position: relative;
+    border: 1px solid #424748;
     width: 65vw;
-    min-height: 20vh;
+    min-height: 25vh;
+    bottom: -1vh;
+    background-color: rgb(248, 250, 255);
   }
 
 
@@ -198,3 +240,34 @@ select:hover {
     position: relative;
     top: -2vh;
   }
+
+
+  .add-menu-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 250, 255);
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 4vh;
+    padding-bottom: 6vh;
+    width: 75vw;
+    top: 4.5vh;
+    border: 2px solid #424748;
+    margin-bottom: 16vh;
+  }
+
+  #add-meal-flight {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    width: 40vw;
+    /* grid-gap: 10px;
+    grid-template-columns: repeat(2, minmax(auto, 352px)); */
+    font-size: 1em;
+    font-weight: 500;
+  }
+
