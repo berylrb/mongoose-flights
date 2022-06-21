@@ -32,8 +32,8 @@
             <option value="SFO">SFO - San Francisco, CA</option>
           </select><br>
     <label for="flight-number-input">Flight Number</label><br>
-    <input type="number" name="flightNo" id="flight-number-input" placeholder="<%= flight.flightNo %>"><br>
-    <label for="departure">Departs <%= flight.departs.toLocaleDateString() + " -- " + flight.departs.toLocaleTimeString([], {timeStyle: 'short'}) %></label><br>
+    <input type="number" name="flightNo" id="flight-number-input" required min="10" max="9999" placeholder="<%= flight.flightNo %>"><br>
+    <label for="departure">Departs - <%= new Date(flight.departs).toLocaleDateString() + " -- " + new Date(flight.departs).toLocaleTimeString([], {timeStyle: 'short'}) %></label><br>
     <input type="datetime-local" name="departs" id="departs-input" value="<%= flight.departs %>">
     <button type="submit">Submit</button>
   </form>
