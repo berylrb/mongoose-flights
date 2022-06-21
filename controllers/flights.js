@@ -112,6 +112,20 @@ function addToMenu(req, res) {
   })
 }
 
+function deleteFromMenu(req, res) {
+  Flight.findById(req.params.flightId)
+  .then(flight => {
+    flight.meals.remove({_id: req.params.mealId})
+    flight.save()
+    .then(() => {
+      res.redirect(`/flights/${flight._id}`)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+  })
+}
+
 export {
   newFlight as new,
   create,
@@ -121,6 +135,7 @@ export {
   edit,
   update,
   createTicket,
-  addToMenu
+  addToMenu,
+  deleteFromMenu
 }
 

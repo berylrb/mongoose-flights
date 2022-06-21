@@ -13,6 +13,7 @@ router.put('/:id', flightsCtrl.update)
 router.get('/:id/edit', flightsCtrl.edit)
 router.post('/:id/tickets', flightsCtrl.createTicket)
 router.post('/:id/meals', flightsCtrl.addToMenu)
+router.delete('/:flightId/meals/:mealId', flightsCtrl.deleteFromMenu)
 
 
 export {
